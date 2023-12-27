@@ -1,9 +1,9 @@
 use bf_interpreter::*;
-use std::{env, fs::{self, File}, io::Read};
+use std::{env, fs::File, io::Read};
 
 fn main() {
     let args = env::args().collect::<Vec<String>>();
-    
+
     if args.len() != 2 {
         println!("Usage: bf <file.bf>");
         std::process::exit(1);
